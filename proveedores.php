@@ -92,8 +92,8 @@ if($_SESSION['ok']=="ok")
 		<tr bgcolor="#FF8000">
 		 <td align="center">NIT</td>
 		 <td align="center">NOMBRE</td>
-		 <td align="center">TELEFONO</td>
 		 <td align="center">DIRECCION</td>
+		 <td align="center">TELEFONO</td>
 		 <td align="center">EMAIL</td>
 		 <td align="center">< - --- - ></td>
 		</tr>
