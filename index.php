@@ -8,46 +8,56 @@
 
 </head>
 <body id="main_body" >
-	
-	<img id="top" src="css/top.png" alt="">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<img id="top" src="css/top.png" alt=""></img>
+
 	<div id="form_container">
-	
-		<h1><a>Ingreso </a></h1>
-		<form id="form_1075005" class="appnitro"  method="post" action="login.php">
-					<div class="form_description">
-			<h2>Ingreso </h2>
-			<p></p>
-		</div>						
-			<ul >
-			
-					<li id="li_1" >
-		<label class="description" for="element_1">Usuario </label>
-		<div>
-			<input id="usuario" name="usuario" class="element text medium" type="text" maxlength="255" value="" required /> 
-		</div> 
-		</li>		
-		<li id="li_3" >
-		<label class="description" for="element_3">Contraseña </label>
-		<div>
-			<input id="clave" name="clave" class="element text medium" type="password" maxlength="255" value="" required /> 
-		</div> 
-		</li>		
-		</div> 
-		</li>
-			
-					<li class="buttons">
-			    <input type="hidden" name="form_id" value="1075005" />
-			    
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Login" />
-		</li>
-			</ul>
-		</form>	
-		<div id="footer">
-			
-		</div>
+		<center>
+			<br>
+			<img src="css/logo.png"></img>
+			<br>
+			<br>
+		</center>
 	</div>
-	<img id="bottom" src="css/bottom.png" alt="">
-	</body>
+		<img id="top" src="css/top.png" alt=""></img>
+		<div id="form_container">
+			<div class="form_description">
+			<br>
+			<h2><center>Ingreso al Sistema</center></h2>
+			</div>
+
+		<form id="form_1075005" class="appnitro"  method="post" action="index.php">
+							
+				<ul >	
+					<li id="li_1" >
+						<label class="description" for="element_1">Usuario </label>
+						<div>
+						<input id="usuario" name="usuario" class="element text medium" type="text" maxlength="255" value="" required /> 
+						</div> 
+					</li>		
+					<li id="li_2" >
+						<label class="description" for="element_2">Contraseña </label>
+						<div>
+						<input id="clave" name="clave" class="element text medium" type="password" maxlength="255" value="" required /> 
+						</div> 
+						<div>
+						<br>
+						<input id="saveForm" class="button_text" type="submit" name="submit" value="Aceptar" />
+						</div>
+					</li>	
+				</ul>	
+		</form>	
+		
+			<div id="footer">
+			</div>
+		</div>
+		</div>
+</body>
 	
 <?php
 session_start(); // Starting Session
@@ -88,7 +98,7 @@ $query->free();
 header("location: almacen.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";
-header("location: login.php"); 
+header("location: index.php"); 
 }
 
 }

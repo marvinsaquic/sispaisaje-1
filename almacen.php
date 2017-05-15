@@ -29,12 +29,11 @@ if($_SESSION['ok']=="ok")
 	<table>
 	<tr>
 	<td><a href="personal.php">USUARIOS</a></td>
-	<td><a href="personal.php">CLIENTES</a></td>
+	<td><a href="clientes.php">CLIENTES</a></td>
 	<td><a href="productos.php">PRODUCTOS</a></td>
 	<td><a href="proveedores.php">PROVEEDORES</a></td>
 	<td><a href="ventas.php">VENTAS</a></td>
 	<td><a href="compras.php">COMPRAS</a></td>
-	
 	</tr>
 	</table>
 	
@@ -43,7 +42,9 @@ if($_SESSION['ok']=="ok")
 	
 		<h1><a><?php echo $row['nombre'];?></a></h1>
 		<form id="form_1075005" class="appnitro"  method="post" action="personal.php">
-					<div class="form_description">
+			
+
+			<div class="form_description">
 			<h2><?php echo $row['nombre'];?></h2><a title=" Modificar los datos del almacen? " href="editar_almacen.php">  <img src="css/edit.jpg">  </a>
 			<p></p>
 			Usuario: <?php echo $_SESSION['nomusuario']." ".$_SESSION['apeusuario']; ?>
@@ -88,8 +89,6 @@ if($_SESSION['ok']=="ok")
 		</li>
 					
 			</ul>
-			
-		
 		</form>	
 		<div id="footer">
 			
@@ -115,7 +114,7 @@ if($_SESSION['ok']=="ok")
 }
 else
 {
-	header("location: login.php");
+	header("location: index.php");
 }
 ?>
 </html>
